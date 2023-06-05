@@ -608,6 +608,7 @@ img.javascript {
 .portofolio__img {
   display: grid;
   transition: .3s;
+  
 }
 
 .portofolio__img:hover {
@@ -615,8 +616,8 @@ img.javascript {
 }
 
 .portofolio__img img {
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 90%;
+  max-height: 90%;
   margin: auto;
   
 }
@@ -630,6 +631,7 @@ img.javascript {
   top: 10px;
   left: 10px;
   color: white;
+  z-index: 1;
 }
 
 
