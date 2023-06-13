@@ -15,7 +15,6 @@ const showMenu = (toggleId, navId) =>{
 }
 
 showMenu('nav-toggle','nav-menu')
-// menambahkan class show menu ketika burger menu d klik di mobile
 
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')
@@ -26,7 +25,6 @@ function linkAction(){
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
-// menghapus/menghilangkan show menu ketika li di klik
 
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
@@ -48,8 +46,6 @@ function scrollActive(){
     })
 }
 window.addEventListener('scroll', scrollActive);
-// merubah warna li ketika halaman ada d halaman li
-
 
 /*==================== ADD HEADER SHADOW ====================*/
 function scrollHeader(){
@@ -58,7 +54,6 @@ function scrollHeader(){
     if(this.scrollY >= 200) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
-// ketika d scroll ke bawah >= 200, akan menambah class scroll header yg berisi shadow
 
 
 /*==================== SHOW SCROLL TOP ====================*/
@@ -68,7 +63,6 @@ function scrollTop(){
     if(this.scrollY >= 560) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollTop)
-// ketika di scroll ke bawah >= 560, akan memunculkan icon u naik ke atas
 
 
 /*==================== DARK MODE ====================*/
@@ -77,7 +71,6 @@ const themeButton = document.getElementById('theme-button')
 const sections = document.querySelectorAll('.section')
 const darkTheme = 'dark-theme'
 const iconTheme = 'bx-sun'
-// variable buat dijadikan nilai true or false
 
 // Previously selected topic (if user selected)
 const selectedTheme = localStorage.getItem('selected-theme')
@@ -89,7 +82,6 @@ const getCurrentTheme = () => sections.forEach(function(sec) {
 }) 
 const getCurTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
 const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx-moon' : 'bx-sun'
-// klo ada class bx-sun, yg d ambil adalah bx-moon
 
 // We validate if the user previously choose a topic
 if(selectedTheme) {

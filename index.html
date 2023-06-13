@@ -7,6 +7,9 @@
         <!-- box icons -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
         
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+        </style>
         
         <link rel="stylesheet" href="style.css">
         <title>Nurcholis Al Fachri</title>
@@ -16,6 +19,7 @@
         <a href="#" class="scrolltop" id="scroll-top">
             <i class="bx bx-chevron-up scrolltop__icon"></i>
         </a>
+        <!-- icon u ke atas -->
         
 
         <header class="header section" id="header">
@@ -31,6 +35,7 @@
                         <li class="nav__item"><a href="#portofolio" class="nav__link">Portofolio</a></li>
 
                         <li><i class="bx bx-moon change-theme" id="theme-button"></i></li>
+                        <!-- ada moon berarti lg mode terang -->
                     </ul>
                 </div>
 
@@ -56,12 +61,12 @@
                                     <path d="M45.9,-67.1C56.1,-55.7,58.8,-37.8,65.6,-20.5C72.3,-3.1,83.2,13.7,80.5,27.5C77.9,41.3,61.7,52,46.1,57.5C30.4,63,15.2,63.3,-2.1,66.2C-19.3,69,-38.6,74.3,-52.9,68.4C-67.2,62.4,-76.5,45.1,-79.4,27.8C-82.3,10.4,-78.8,-7,-72.2,-22.3C-65.7,-37.7,-56.1,-50.9,-43.6,-61.6C-31,-72.2,-15.5,-80.4,1.1,-82C17.8,-83.6,35.6,-78.6,45.9,-67.1Z" transform="translate(100 100)" />
                                 </svg>
                             </span>
-                            <img src="/icon/services/gura.png" alt="" class="gura">
+                            <img src="/icon/porto/me.png" alt="" class="gura">
                         </div>
                     </div>
                 </div>
             </section>
-
+            
             <section class="about section" id="about">
                 <div class="bd-container">
                     <span class="section-subtitle" class="about-me">About Me!</span>
@@ -147,12 +152,16 @@
                                 <img src="icon/app/react.png" title="REACT">
                             </div>
                         </div>
-                        <!-- <div class="thumbnail">
-                            <img src="icon/app/typescript.png" title="TYPESCRIPT">
-                        </div> -->
-                        <!-- <div class="thumbnail">
-                            <img src="icon/app/nextjs.png" title="NEXT">
-                        </div> -->
+                        <div class="thumbnail-container">
+                            <div class="thumbnail">
+                                <img src="icon/app/typescript.png" title="TYPESCRIPT">
+                            </div>
+                        </div>
+                        <div class="thumbnail-container">
+                            <div class="thumbnail">
+                                <img src="icon/app/nextjs.png" title="NEXT">
+                            </div>
+                        </div>
                         <div class="thumbnail-container">
                             <div class="thumbnail">
                                 <img src="icon/app/redux.png" title="REDUX">
@@ -217,50 +226,55 @@
                         <div class="portofolio__card">
                             <div class="portofolio__header">
                                 <span class="portofolio__type">Vanilla js</span>
-                                <a href="http://google.com" class="portofolio__img" target="_blank"><img src="icon/Porto/1.png" alt=""></a>
+                                <a href="https://nurcholis-alfachri.netlify.app/" class="portofolio__img" target="_blank"><img src="icon/Porto/1.png" alt=""></a>
                             </div>
                             <div class="portofolio__footer">
                                 <div class="portofolio__title">This Portofolio Website</div>
+                                <hr>
                                 <div class="portofolio__content">Personal website built with Vanilla Javascript and CSS</div>
                             </div>
                         </div>
                         <div class="portofolio__card">
                             <div class="portofolio__header">
                                 <span class="portofolio__type">Vanilla js</span>
-                                <a href="http://google.com" class="portofolio__img" target="_blank"><img src="icon/Porto/2.png" alt=""></a>
+                                <a href="https://github.com/nurcholisalfachri/omdbAPI" class="portofolio__img" target="_blank"><img src="icon/Porto/2.png" alt=""></a>
                             </div>
                             <div class="portofolio__footer">
                                 <div class="portofolio__title">Movie DB</div>
+                                <hr>
                                 <div class="portofolio__content">Searching movies from OMDb API. Styling with bootstrap</div>
                             </div>
                         </div>
                         <div class="portofolio__card">
                             <div class="portofolio__header">
                                 <span class="portofolio__type">React js</span>
-                                <a href="http://google.com" class="portofolio__img" target="_blank"><img src="icon/Porto/3.png" alt=""></a>
+                                <a href="https://nurcholisalfachri.github.io/" class="portofolio__img" target="_blank"><img src="icon/Porto/3.png" alt=""></a>
                             </div>
                             <div class="portofolio__footer">
                                 <div class="portofolio__title">News Content</div>
+                                <hr>
                                 <div class="portofolio__content">Selecting a news or blog content from jsonplaceholder.typicode</div>
                             </div>
                         </div>
                         <div class="portofolio__card">
                             <div class="portofolio__header">
                                 <span class="portofolio__type">Node Express js</span>
-                                <a href="http://google.com" class="portofolio__img" target="_blank"><img src="icon/Porto/4.png" alt=""></a>
+                                <a href="https://github.com/nurcholisalfachri/mongodb-contact" class="portofolio__img" target="_blank"><img src="icon/Porto/4.png" alt=""></a>
                             </div>
                             <div class="portofolio__footer">
                                 <div class="portofolio__title">Contact App</div>
+                                <hr>
                                 <div class="portofolio__content">Create, read, update and delete contacts using Mongodb database. Styling with bootstrap</div>
                             </div>
                         </div>
                         <div class="portofolio__card">
                             <div class="portofolio__header">
                                 <span class="portofolio__type">React js</span>
-                                <a href="http://google.com" class="portofolio__img" target="_blank"><img src="icon/Porto/5.png" alt=""></a>
+                                <a href="https://github.com/nurcholisalfachri/blogpost" class="portofolio__img" target="_blank"><img src="icon/Porto/5.png" alt=""></a>
                             </div>
                             <div class="portofolio__footer">
                                 <div class="portofolio__title">Blog Post</div>
+                                <hr>
                                 <div class="portofolio__content">Create, read, update and delete blog contents with redux or context</div>
                             </div>
                         </div>
