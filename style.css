@@ -301,7 +301,7 @@ body.dark-theme {
   display: grid;
 }
 
-.gura-circle {
+.image-circle {
   display: grid;
   height: 400px;
   width: calc(400px-1rem);
@@ -310,7 +310,7 @@ body.dark-theme {
   top: 80px;
 }
 
-.gura {
+.image {
   height: 400px;
   z-index: 1;
 }
@@ -320,7 +320,7 @@ body.dark-theme {
   position: absolute;
   fill: #1589FF;
   display: grid;
-  left: -80px;
+  left: -85px;
 }
 
 .blob {
@@ -626,7 +626,7 @@ img.javascript {
     
   }
 
-  .gura-circle {
+  .image-circle {
     top: 0px;
   }
 
@@ -725,20 +725,19 @@ img.javascript {
     margin: 90px 0 20px;
   }
 
-  .gura-circle {
+  .image-circle {
     top: 80px;
   }
 
-}
-
-@media screen and (max-width: 576px) {
-
-  .gura {
+  .span__blob {
+    left: -75px;
+  }
+  
+  .blob {
+    width: 380px;
+  }
+  
+  .image {
     height: 350px;
   }
-
-  .blob {
-    width: 400px;
-  }
-
 }
