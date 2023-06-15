@@ -94,7 +94,6 @@ if(selectedTheme) {
     themeButton.classList[selectedIcon === 'bx-moon' ? 'add' : 'remove'](iconTheme)
     // menambah class bx-sun (iconTheme)
 }
-// validasi
 
 // Active / deactivate the theme manually with the button
 themeButton.addEventListener('click', () => {
