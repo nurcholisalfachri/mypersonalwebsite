@@ -348,7 +348,6 @@ body.dark-theme {
   border-radius: 8px;
   min-width: 200px;
   background: #2196f3;
-  color: white;
   display: block;
   margin: var(--mp-4) auto;
   font-size: 12px;
@@ -360,6 +359,10 @@ body.dark-theme {
 .btn:hover {
   background: #1873bb;
   cursor: pointer;
+}
+
+.vitae {
+  color: white;
 }
 
 .about__socmed {
