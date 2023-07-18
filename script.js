@@ -122,7 +122,7 @@ sr.reveal(` .home__data, .hero__container,
             .about__data, .about__socmed,
             .services__content, .services__container,
             .thumbnail-container, 
-            .portofolio__container,
+            .portofolio__card,
             .footer__content, .footer__copy`, {
     interval: 200
 })
