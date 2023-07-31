@@ -7,9 +7,7 @@ const showMenu = (toggleId, navId) =>{
     // Validate that variables exist
     if(toggle && nav){
         toggle.addEventListener('click', ()=>{
-            // We add the show-menu class to the div tag with the nav__menu class
             nav.classList.toggle('show-menu')
-            // class show-menu berisi class nav__menu
         })
     }
 }
@@ -21,7 +19,6 @@ const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction(){
     const navMenu = document.getElementById('nav-menu')
-    // When we click on each nav__link, we remove the show-menu class
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
@@ -29,7 +26,6 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sectionz = document.querySelectorAll('section[id]')
-// console.log(sectionz); id dr tiap2 section
 function scrollActive(){
     const scrollY = window.pageYOffset
 
@@ -50,7 +46,6 @@ window.addEventListener('scroll', scrollActive);
 /*==================== ADD HEADER SHADOW ====================*/
 function scrollHeader(){
     const nav = document.getElementById('header')
-    // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
     if(this.scrollY >= 200) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
@@ -59,7 +54,6 @@ window.addEventListener('scroll', scrollHeader)
 /*==================== SHOW SCROLL TOP ====================*/
 function scrollTop(){
     const scrollTop = document.getElementById('scroll-top');
-    // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
     if(this.scrollY >= 560) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollTop)
@@ -85,25 +79,20 @@ const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx-moo
 
 // We validate if the user previously choose a topic
 if(selectedTheme) {
-    // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
     sections.forEach(function(sec) {
         sec.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
     })
     document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-    // kalau body tema nya dark, tambah class dark-theme
     themeButton.classList[selectedIcon === 'bx-moon' ? 'add' : 'remove'](iconTheme)
-    // menambah class bx-sun (iconTheme)
 }
 
 // Active / deactivate the theme manually with the button
 themeButton.addEventListener('click', () => {
-    // Add or remove the dark / icon theme
     sections.forEach(function(sec) {
         sec.classList.toggle(darkTheme)
     })
     document.body.classList.toggle(darkTheme)
     themeButton.classList.toggle(iconTheme)
-    // We save the theme and the current icon that the user choose
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-theme', getCurTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
