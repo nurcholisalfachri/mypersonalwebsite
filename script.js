@@ -27,11 +27,11 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sectionz = document.querySelectorAll('section[id]')
 function scrollActive(){
-    const scrollY = window.pageYOffset
+    const scrollY = window.scrollY
 
     sectionz.forEach(current =>{
         const sectionHeight = current.offsetHeight
-        const sectionTop = current.offsetTop - 50;
+        const sectionTop = current.offsetTop -60;
         sectionId = current.getAttribute('id')
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
