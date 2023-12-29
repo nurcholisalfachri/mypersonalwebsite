@@ -398,6 +398,7 @@ body.dark-theme {
 .services__container {
   max-width: 800px;
   margin: auto;
+  display: flex;
 }
 
 .services__card {
@@ -528,12 +529,13 @@ img.javascript {
 .portofolio__header {
   position: relative;
   background-color: white;
+  height: 400px;
+  display: flex;
 }
 
 .portofolio__img {
   display: grid;
   transition: .3s;
-  
 }
 
 .portofolio__img:hover {
@@ -544,7 +546,6 @@ img.javascript {
   max-width: 90%;
   max-height: 90%;
   margin: auto;
-  
 }
 
 .portofolio__type {
@@ -563,7 +564,6 @@ img.javascript {
 .portofolio__footer {
   background-color: #2196f3;
   height: 140px;
-
 }
 
 .portofolio__title {
