@@ -439,6 +439,7 @@ body.dark-theme {
 
 .services__content {
   display: grid;
+  height: 150px;
 }
 
 .services__content p {
