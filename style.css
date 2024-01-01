@@ -564,7 +564,7 @@ img.javascript {
 
 .portofolio__footer {
   background-color: #2196f3;
-  height: 140px;
+  height: 165px;
 }
 
 .portofolio__title {
@@ -577,7 +577,7 @@ img.javascript {
 .portofolio__content {
   color: white;
   max-width: calc(100% - 2rem);
-  padding: 10px 30px 25px;
+  padding: 10px 30px 10px;
 }
 
 /* ========== Footer ========== */
